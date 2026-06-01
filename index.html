@@ -129,3 +129,45 @@
 
       <!-- Correos Corporativos -->
       <div class="swiper-slide" style="background-image:url('fondo_correos.jpg')">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Correos Corporativos</h1>
+          <p>Configuración y gestión de casillas de correo profesional.</p>
+        </div>
+      </div>
+
+      <!-- Contacto -->
+      <div class="swiper-slide" style="background-image:url('fondo_contacto.jpg')">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Contacto</h1>
+          <p>📍 Puente Alto, Región Metropolitana, Chile<br>
+             📧 contacto@infors.cl<br>
+             📱 WhatsApp: +56 9 1234 5678</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flechas -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <footer>
+    © 2026 Infors Computación SpA — Todos los derechos reservados.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      effect: 'fade',
+      speed: 800,
+    });
+  </script>
+</body>
+</html>
