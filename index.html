@@ -22,10 +22,27 @@
       background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
       color: white;
       text-align: center;
-      padding: 50px 20px;
+      padding: 60px 20px;
     }
-    header img { max-width: 120px; margin-bottom: 15px; }
-    header h1 { font-size: 2.4em; margin-bottom: 10px; }
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .logo-container img {
+      width: 180px;
+      height: auto;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: aparecerZoom 1.5s ease-out forwards;
+      border-radius: 10px; /* opcional */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* opcional */
+    }
+    @keyframes aparecerZoom {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
     nav {
       background-color: var(--color-primario);
       display: flex; justify-content: center;
@@ -70,7 +87,9 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo Infors Computación SpA">
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo Infors Computación SpA">
+    </div>
     <h1>Infors Computación SpA</h1>
     <p>Soluciones tecnológicas confiables para empresas y profesionales.</p>
   </header>
@@ -93,5 +112,28 @@
       </div>
       <div class="servicio">
         <h3>💼 Diseño Web</h3>
-        <p>Creación de sitios
+        <p>Creación de sitios web modernos y adaptables.</p>
+      </div>
+      <div class="servicio">
+        <h3>🔒 Seguridad Informática</h3>
+        <p>Protección de datos y respaldo seguro.</p>
+      </div>
+      <div class="servicio">
+        <h3>📧 Correos Corporativos</h3>
+        <p>Configuración y gestión de casillas de correo profesional.</p>
+      </div>
+    </div>
+  </section>
 
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Puente Alto, Región Metropolitana, Chile</p>
+    <p>📧 contacto@infors.cl</p>
+    <p>📱 WhatsApp: +56 9 1234 5678</p>
+  </section>
+
+  <footer>
+    © 2026 Infors Computación SpA — Todos los derechos reservados.
+  </footer>
+</body>
+</html>
