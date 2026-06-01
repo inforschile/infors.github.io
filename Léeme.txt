@@ -1,0 +1,99 @@
+=================================================
+INFORS - SITIO WEB
+=================================================
+
+Archivos principales:
+
+index.html
+styles.css
+script.js
+
+=================================================
+IMÁGENES
+=================================================
+
+Crear carpeta:
+
+/imagenes
+
+Agregar imágenes:
+
+soporte.jpg
+redes.jpg
+hosting.jpg
+cctv.jpg
+
+=================================================
+DATOS A MODIFICAR
+=================================================
+
+1. WhatsApp
+
+Buscar:
+
+https://wa.me/569XXXXXXXX
+
+Reemplazar por tu número real.
+
+Ejemplo:
+
+https://wa.me/56912345678
+
+=================================================
+
+2. Correo electrónico
+
+Buscar:
+
+contacto@infors.cl
+
+Reemplazar por tu correo real.
+
+=================================================
+
+3. Dirección
+
+Buscar:
+
+Santiago, Chile
+
+Reemplazar por tu ciudad o dirección.
+
+=================================================
+
+4. Servicios
+
+Modificar libremente desde index.html
+
+=================================================
+
+5. Logo
+
+Actualmente usa texto:
+
+INFORS
+
+Más adelante se puede reemplazar por:
+
+<img src="imagenes/logo.png">
+
+=================================================
+
+PRÓXIMAS MEJORAS
+=================================================
+
+- Formulario de contacto
+- Botón WhatsApp profesional
+- Galería de trabajos
+- Clientes
+- Testimonios
+- Mapa Google Maps
+- SEO para Google
+- Certificado SSL
+- Animaciones avanzadas
+
+=================================================
+
+INFORS
+Soluciones Tecnológicas
+=================================================
