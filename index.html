@@ -1,173 +1,343 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Infors Computación SpA</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <style>
-    :root {
-      --color-primario: #003366;
-      --color-secundario: #0066cc;
-      --color-texto: #fff;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INFORS | Soluciones Tecnológicas</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI, Arial, sans-serif;
+    color:#333;
+}
+
+header{
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:100;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+.logo{
+    color:white;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+}
+
+.hero{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    display:none;
+}
+
+.slide.active{
+    display:block;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.overlay h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.overlay p{
+    max-width:800px;
+    font-size:1.4rem;
+    line-height:1.6;
+}
+
+.btn{
+    margin-top:30px;
+    display:inline-block;
+    background:#007BFF;
+    color:white;
+    padding:15px 35px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.indicators{
+    position:absolute;
+    bottom:40px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:10px;
+}
+
+.indicators span{
+    width:40px;
+    height:4px;
+    background:white;
+    opacity:.4;
+}
+
+.indicators span.active{
+    opacity:1;
+}
+
+.services{
+    padding:80px 10%;
+    background:#f5f7fa;
+}
+
+.services h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.contact{
+    background:#0A2540;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+
+    header{
+        padding:15px 20px;
     }
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      height: 100%;
-      background-color: #000;
+
+    .overlay h1{
+        font-size:2.2rem;
     }
-    .swiper {
-      width: 100%;
-      height: 100vh;
+
+    .overlay p{
+        font-size:1rem;
     }
-    .swiper-slide {
-      position: relative;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: var(--color-texto);
-      text-align: center;
-      padding: 20px;
-    }
-    .overlay {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 1;
-    }
-    .content {
-      position: relative;
-      z-index: 2;
-      max-width: 800px;
-    }
-    .logo {
-      width: 160px;
-      margin-bottom: 20px;
-      opacity: 0;
-      transform: scale(0.8);
-      animation: aparecerZoom 1.5s ease-out forwards;
-    }
-    @keyframes aparecerZoom {
-      0% { opacity: 0; transform: scale(0.8); }
-      100% { opacity: 1; transform: scale(1); }
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.2em;
-      line-height: 1.5;
-    }
-    .swiper-button-next, .swiper-button-prev {
-      color: var(--color-secundario);
-    }
-    footer {
-      background-color: var(--color-primario);
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-    }
-  </style>
+
+}
+
+</style>
 </head>
+
 <body>
-  <!-- Carrusel principal -->
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <!-- Inicio -->
-      <div class="swiper-slide" style="background-image:url('fondo_inicio.jpg')">
-        <div class="overlay"></div>
-        <div class="content">
-          <img src="logo.png" alt="Logo Infors Computación SpA" class="logo">
-          <h1>Infors Computación SpA</h1>
-          <p>Soluciones tecnológicas confiables para empresas y profesionales.</p>
-        </div>
-      </div>
 
-      <!-- Soporte Técnico -->
-      <div class="swiper-slide" style="background-image:url('fondo_soporte.jpg')">
-        <div class="overlay"></div>
-        <div class="content">
-          <h1>Soporte Técnico</h1>
-          <p>Mantenimiento y reparación de equipos informáticos.</p>
-        </div>
-      </div>
+<header>
 
-      <!-- Hosting y Dominios -->
-      <div class="swiper-slide" style="background-image:url('fondo_hosting.jpg')">
-        <div class="overlay"></div>
-        <div class="content">
-          <h1>Hosting y Dominios</h1>
-          <p>Administración de hosting y gestión de dominios corporativos.</p>
-        </div>
-      </div>
+    <div class="logo">INFORS</div>
 
-      <!-- Diseño Web -->
-      <div class="swiper-slide" style="background-image:url('fondo_web.jpg')">
-        <div class="overlay"></div>
-        <div class="content">
-          <h1>Diseño Web</h1>
-          <p>Creación de sitios web modernos y adaptables.</p>
-        </div>
-      </div>
+    <nav class="menu">
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 
-      <!-- Seguridad Informática -->
-      <div class="swiper-slide" style="background-image:url('fondo_seguridad.jpg')">
-        <div class="overlay"></div>
-        <div class="content">
-          <h1>Seguridad Informática</h1>
-          <p>Protección de datos y respaldo seguro.</p>
-        </div>
-      </div>
+</header>
 
-      <!-- Correos Corporativos -->
-      <div class="swiper-slide" style="background-image:url('fondo_correos.jpg')">
-        <div class="overlay"></div>
-        <div class="content">
-          <h1>Correos Corporativos</h1>
-          <p>Configuración y gestión de casillas de correo profesional.</p>
-        </div>
-      </div>
+<section class="hero">
 
-      <!-- Contacto -->
-      <div class="swiper-slide" style="background-image:url('fondo_contacto.jpg')">
-        <div class="overlay"></div>
-        <div class="content">
-          <h1>Contacto</h1>
-          <p>📍 Puente Alto, Región Metropolitana, Chile<br>
-             📧 contacto@infors.cl<br>
-             📱 WhatsApp: +56 9 1234 5678</p>
+    <div class="slide active" style="background-image:url('imagenes/soporte.jpg')">
+        <div class="overlay">
+            <h1>Soporte Informático</h1>
+            <p>
+                Soluciones rápidas y eficientes para empresas y particulares.
+            </p>
+            <a href="#contacto" class="btn">Solicitar Servicio</a>
         </div>
-      </div>
     </div>
 
-    <!-- Flechas -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
+    <div class="slide" style="background-image:url('imagenes/redes.jpg')">
+        <div class="overlay">
+            <h1>Redes y Cableado Estructurado</h1>
+            <p>
+                Instalación, certificación y optimización de redes corporativas.
+            </p>
+            <a href="#contacto" class="btn">Más Información</a>
+        </div>
+    </div>
 
-  <footer>
-    © 2026 Infors Computación SpA — Todos los derechos reservados.
-  </footer>
+    <div class="slide" style="background-image:url('imagenes/hosting.jpg')">
+        <div class="overlay">
+            <h1>Hosting y Dominios</h1>
+            <p>
+                Registro de dominios, DNS y alojamiento web profesional.
+            </p>
+            <a href="#contacto" class="btn">Consultar</a>
+        </div>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      effect: 'fade',
-      speed: 800,
-    });
-  </script>
+    <div class="slide" style="background-image:url('imagenes/cctv.jpg')">
+        <div class="overlay">
+            <h1>Cámaras de Seguridad</h1>
+            <p>
+                Sistemas CCTV para hogares y empresas.
+            </p>
+            <a href="#contacto" class="btn">Cotizar</a>
+        </div>
+    </div>
+
+    <div class="indicators">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</section>
+
+<section class="services" id="servicios">
+
+    <h2>Nuestros Servicios</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>🖥️ Soporte Técnico</h3>
+            <p>Mantención y reparación de computadores.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Redes</h3>
+            <p>Diseño e implementación de infraestructura de red.</p>
+        </div>
+
+        <div class="card">
+            <h3>☁️ Hosting</h3>
+            <p>Dominios, correos corporativos y alojamiento web.</p>
+        </div>
+
+        <div class="card">
+            <h3>🖧 Servidores</h3>
+            <p>Linux, Windows Server y virtualización.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛡️ Respaldos</h3>
+            <p>Protección y recuperación de información.</p>
+        </div>
+
+        <div class="card">
+            <h3>📹 CCTV</h3>
+            <p>Instalación y configuración de cámaras IP.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contacto">
+
+    <h2>Contáctanos</h2>
+
+    <br>
+
+    <p>WhatsApp: +56 9 XXXX XXXX</p>
+    <p>Email: contacto@infors.cl</p>
+    <p>Santiago, Chile</p>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/569XXXXXXXX" target="_blank">
+📱
+</a>
+
+<script>
+
+let slides = document.querySelectorAll('.slide');
+let dots = document.querySelectorAll('.indicators span');
+
+let current = 0;
+
+setInterval(() => {
+
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+
+    current++;
+
+    if(current >= slides.length){
+        current = 0;
+    }
+
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+
+}, 5000);
+
+</script>
+
 </body>
 </html>
