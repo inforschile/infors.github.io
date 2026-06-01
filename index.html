@@ -4,136 +4,128 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Infors Computación SpA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
     :root {
       --color-primario: #003366;
       --color-secundario: #0066cc;
-      --color-fondo: #f4f6f9;
-      --color-texto: #333;
+      --color-texto: #fff;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
+    body, html {
+      margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
-      background-color: var(--color-fondo);
-      color: var(--color-texto);
-      line-height: 1.6;
+      height: 100%;
+      background-color: #000;
     }
-    header {
-      background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
+    .swiper {
+      width: 100%;
+      height: 100vh;
     }
-    .logo-container {
+    .swiper-slide {
+      position: relative;
+      background-size: cover;
+      background-position: center;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-bottom: 20px;
+      color: var(--color-texto);
+      text-align: center;
+      padding: 20px;
     }
-    .logo-container img {
-      width: 180px;
-      height: auto;
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+    .logo {
+      width: 160px;
+      margin-bottom: 20px;
       opacity: 0;
       transform: scale(0.8);
       animation: aparecerZoom 1.5s ease-out forwards;
-      border-radius: 10px; /* opcional */
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* opcional */
     }
     @keyframes aparecerZoom {
       0% { opacity: 0; transform: scale(0.8); }
       100% { opacity: 1; transform: scale(1); }
     }
-    nav {
-      background-color: var(--color-primario);
-      display: flex; justify-content: center;
-      padding: 12px;
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
-    nav a {
-      color: white; text-decoration: none;
-      margin: 0 20px; font-weight: bold;
-      transition: color 0.3s;
+    p {
+      font-size: 1.2em;
+      line-height: 1.5;
     }
-    nav a:hover { color: var(--color-secundario); }
-    section {
-      padding: 50px 20px;
-      max-width: 1100px; margin: auto;
+    .swiper-button-next, .swiper-button-prev {
+      color: var(--color-secundario);
     }
-    h2 { color: var(--color-primario); margin-bottom: 25px; text-align: center; }
-    .servicios {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-    }
-    .servicio {
-      background: white; padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .servicio:hover { transform: translateY(-5px); }
-    .servicio h3 { margin-bottom: 12px; color: var(--color-secundario); }
     footer {
       background-color: var(--color-primario);
-      color: white; text-align: center;
-      padding: 20px; margin-top: 40px;
-    }
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.8em; }
-      nav { flex-direction: column; }
-      nav a { margin: 8px 0; }
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="logo.png" alt="Logo Infors Computación SpA">
-    </div>
-    <h1>Infors Computación SpA</h1>
-    <p>Soluciones tecnológicas confiables para empresas y profesionales.</p>
-  </header>
+  <!-- Carrusel principal -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Inicio -->
+      <div class="swiper-slide" style="background-image:url('fondo_inicio.jpg')">
+        <div class="overlay"></div>
+        <div class="content">
+          <img src="logo.png" alt="Logo Infors Computación SpA" class="logo">
+          <h1>Infors Computación SpA</h1>
+          <p>Soluciones tecnológicas confiables para empresas y profesionales.</p>
+        </div>
+      </div>
 
-  <nav>
-    <a href="#servicios">Servicios</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+      <!-- Soporte Técnico -->
+      <div class="swiper-slide" style="background-image:url('fondo_soporte.jpg')">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Soporte Técnico</h1>
+          <p>Mantenimiento y reparación de equipos informáticos.</p>
+        </div>
+      </div>
 
-  <section id="servicios">
-    <h2>Nuestros Servicios</h2>
-    <div class="servicios">
-      <div class="servicio">
-        <h3>🖥️ Soporte Técnico</h3>
-        <p>Mantenimiento y reparación de equipos informáticos.</p>
+      <!-- Hosting y Dominios -->
+      <div class="swiper-slide" style="background-image:url('fondo_hosting.jpg')">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Hosting y Dominios</h1>
+          <p>Administración de hosting y gestión de dominios corporativos.</p>
+        </div>
       </div>
-      <div class="servicio">
-        <h3>🌐 Hosting y Dominios</h3>
-        <p>Administración de hosting y gestión de dominios corporativos.</p>
-      </div>
-      <div class="servicio">
-        <h3>💼 Diseño Web</h3>
-        <p>Creación de sitios web modernos y adaptables.</p>
-      </div>
-      <div class="servicio">
-        <h3>🔒 Seguridad Informática</h3>
-        <p>Protección de datos y respaldo seguro.</p>
-      </div>
-      <div class="servicio">
-        <h3>📧 Correos Corporativos</h3>
-        <p>Configuración y gestión de casillas de correo profesional.</p>
-      </div>
-    </div>
-  </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>📍 Puente Alto, Región Metropolitana, Chile</p>
-    <p>📧 contacto@infors.cl</p>
-    <p>📱 WhatsApp: +56 9 1234 5678</p>
-  </section>
+      <!-- Diseño Web -->
+      <div class="swiper-slide" style="background-image:url('fondo_web.jpg')">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Diseño Web</h1>
+          <p>Creación de sitios web modernos y adaptables.</p>
+        </div>
+      </div>
 
-  <footer>
-    © 2026 Infors Computación SpA — Todos los derechos reservados.
-  </footer>
-</body>
-</html>
+      <!-- Seguridad Informática -->
+      <div class="swiper-slide" style="background-image:url('fondo_seguridad.jpg')">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Seguridad Informática</h1>
+          <p>Protección de datos y respaldo seguro.</p>
+        </div>
+      </div>
+
+      <!-- Correos Corporativos -->
+      <div class="swiper-slide" style="background-image:url('fondo_correos.jpg')">
