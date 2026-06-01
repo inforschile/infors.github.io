@@ -31,7 +31,7 @@ DATOS A MODIFICAR
 
 Buscar:
 
-https://wa.me/569XXXXXXXX
+https://wa.me/56998800550
 
 Reemplazar por tu número real.
 
@@ -45,7 +45,7 @@ https://wa.me/56912345678
 
 Buscar:
 
-contacto@infors.cl
+rramirez@infors.cl
 
 Reemplazar por tu correo real.
 
