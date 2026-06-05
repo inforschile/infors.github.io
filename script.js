@@ -38,4 +38,13 @@ indicators.forEach((indicator, i) => {
 });
 
 // flechas
-document.querySelector(".hero").insertAdjacentHTML("beforeend",
+document.querySelector(".hero").insertAdjacentHTML("beforeend", `
+    <div class="arrows">
+        <span class="prev">⬅️</span>
+        <span class="next">➡️</span>
+    </div>
+`);
+
+document.querySelector(".prev").addEventListener("click", prevSlide);
+document.querySelector(".next").addEventListener("click", nextSlide);
+
