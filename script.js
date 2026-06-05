@@ -1,49 +1,41 @@
-// Carrusel principal
+// script.js
 
-const slides = document.querySelectorAll('.slide');
-const indicators = document.querySelectorAll('.indicators span');
+let slides = document.querySelectorAll(".slide");
+let indicators = document.querySelectorAll(".indicators span");
+let currentIndex = 0;
+let interval = 5000; // tiempo en ms (5 segundos)
 
-let currentSlide = 0;
-
-function showSlide(index){
-
-    slides.forEach(slide=>{
-        slide.classList.remove('active');
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        indicators[i].classList.remove("active");
+        if (i === index) {
+            slide.classList.add("active");
+            indicators[i].classList.add("active");
+        }
     });
-
-    indicators.forEach(dot=>{
-        dot.classList.remove('active');
-    });
-
-    slides[index].classList.add('active');
-    indicators[index].classList.add('active');
-
+    currentIndex = index;
 }
 
-function nextSlide(){
-
-    currentSlide++;
-
-    if(currentSlide >= slides.length){
-        currentSlide = 0;
-    }
-
-    showSlide(currentSlide);
-
+function nextSlide() {
+    let newIndex = (currentIndex + 1) % slides.length;
+    showSlide(newIndex);
 }
 
-// Cambia cada 5 segundos
-setInterval(nextSlide, 5000);
+function prevSlide() {
+    let newIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(newIndex);
+}
 
-// Permite hacer clic en los indicadores
-indicators.forEach((dot,index)=>{
+// autoplay
+setInterval(nextSlide, interval);
 
-    dot.addEventListener('click',()=>{
-
-        currentSlide = index;
-
-        showSlide(currentSlide);
-
+// indicadores clicables
+indicators.forEach((indicator, i) => {
+    indicator.addEventListener("click", () => {
+        showSlide(i);
     });
-
 });
+
+// flechas
+document.querySelector(".hero").insertAdjacentHTML("beforeend",
