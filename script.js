@@ -47,4 +47,3 @@ document.querySelector(".hero").insertAdjacentHTML("beforeend", `
 
 document.querySelector(".prev").addEventListener("click", prevSlide);
 document.querySelector(".next").addEventListener("click", nextSlide);
-
