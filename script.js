@@ -63,5 +63,12 @@ form.addEventListener("submit", async function(e) {
     formMessage.style.color = "red";
     formMessage.textContent = "❌ Hubo un problema al enviar. Intenta nuevamente.";
   }
+/* Mostrar sección de contacto al hacer clic */
+const btnContacto = document.getElementById("btn-contacto");
+const contacto = document.getElementById("contacto");
+
+btnContacto.addEventListener("click", () => {
+  contacto.style.display = "block";
+  contacto.scrollIntoView({ behavior: "smooth" });
 });
 
