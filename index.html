@@ -7,96 +7,33 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Barra superior -->
-  <header class="navbar">
-    <img src="imagenes/logo.png" alt="Infors" class="logo">
+  <header>
     <nav>
-      <a href="#lista-servicios">Servicios</a>
-      <a id="btn-contacto" href="#contacto">Contacto</a>
+      <img src="img/logo-infors.png" alt="Infors Logo" class="logo">
+      <ul>
+        <li><a href="#servicios" id="btn-servicios">Servicios</a></li>
+        <li><a href="#contacto" id="btn-contacto">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Sección principal -->
   <section class="hero">
     <h1>Soluciones tecnológicas confiables</h1>
     <p>Infors Computación SpA</p>
+    <button id="btn-info">Más Información</button>
   </section>
 
-  <!-- Slider de servicios -->
-  <section id="servicios" class="slider">
-    <div class="slide active">
-      <img src="imagenes/hosting.jpg" alt="Hosting y Servicios Web">
-      <div class="slide-text">
-        <h2>Hosting y Servicios Web</h2>
-        <p>Hosting profesional, correos corporativos, dominios y administración DNS.</p>
-        <a href="#lista-servicios" class="btn-info">Más Información</a>
-      </div>
-    </div>
-
-    <div class="slide">
-      <img src="imagenes/soporte.jpg" alt="Soporte Técnico">
-      <div class="slide-text">
-        <h2>Soporte Técnico</h2>
-        <p>Asistencia experta en hardware y software.</p>
-        <a href="#lista-servicios" class="btn-info">Más Información</a>
-      </div>
-    </div>
-
-    <div class="slide">
-      <img src="imagenes/servidores.jpg" alt="Servidores Linux">
-      <div class="slide-text">
-        <h2>Servidores Linux</h2>
-        <p>Implementación y administración de servidores seguros.</p>
-        <a href="#lista-servicios" class="btn-info">Más Información</a>
-      </div>
-    </div>
-
-    <!-- Flechas -->
-    <button class="prev">◀</button>
-    <button class="next">▶</button>
+  <section id="lista-servicios" class="servicios" style="display:none;">
+    <h2>Servicios Web</h2>
+    <p>Hosting profesional, correos corporativos, dominios y administración DNS.</p>
+    <a href="https://wa.me/569XXXXXXXX?text=Hola,%20quiero%20consultar%20por%20el%20plan%20de%20hosting%20anual%20de%20$125.000%20+%20IVA" target="_blank" class="precio">
+      $125.000 + IVA
+    </a>
   </section>
 
-  <!-- Lista de servicios -->
-  <section id="lista-servicios" class="servicios">
-    <h2>Nuestros Servicios</h2>
-    <ul>
-      <li><strong>Hosting Corporativo:</strong> Planes anuales con soporte dedicado, correos de 10 GB y administración DNS.</li>
-      <li><strong>Servidores Linux:</strong> Implementación, monitoreo y seguridad avanzada para entornos empresariales.</li>
-      <li><strong>Soporte Técnico:</strong> Diagnóstico y reparación de hardware, instalación de software y mantenimiento preventivo.</li>
-      <li><strong>Recuperación de Datos:</strong> Restauración de información desde discos dañados o sistemas formateados.</li>
-      <li><strong>Redes y Conectividad:</strong> Configuración de routers, switches, VPN y cableado estructurado.</li>
-      <li><strong>Diseño Web:</strong> Desarrollo de sitios modernos, optimizados para móviles y posicionamiento SEO.</li>
-      <li><strong>Consultoría Tecnológica:</strong> Asesoría en infraestructura, migración a la nube y optimización de recursos.</li>
-    </ul>
-  </section>
-
-  <!-- Sección de contacto -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>📧 <a href="mailto:contacto@infors.cl">contacto@infors.cl</a></p>
-    <p>💬 <a href="https://wa.me/569XXXXXXXX" target="_blank">Contáctanos por WhatsApp</a></p>
-
-    <form class="contact-form" action="https://formspree.io/f/xwvjvyww" method="POST">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
-
-      <label for="email">Correo:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-      <input type="hidden" name="_next" value="https://ricardoramirez78.github.io/infors/gracias.html">
-      <input type="hidden" name="_subject" value="Nuevo mensaje desde Infors.cl">
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <!-- Pie de página -->
-  <footer>
-    © 2026 Infors Computación SpA — Todos los derechos reservados.
-  </footer>
+  <a href="https://wa.me/569XXXXXXXX" class="whatsapp-float" target="_blank">
+    <img src="img/whatsapp-icon.png" alt="WhatsApp">
+  </a>
 
   <script src="script.js"></script>
 </body>
