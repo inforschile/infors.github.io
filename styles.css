@@ -1,12 +1,18 @@
-/* General */
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+/* ============================
+   Estilos generales
+   ============================ */
+html, body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
   color: #333;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  overflow-x: hidden;
 }
-/* Barra superior */
+
+/* ============================
+   Barra superior fija
+   ============================ */
 .navbar {
   background-color: #0d47a1;
   color: #fff;
@@ -22,22 +28,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Logo */
-.logo {
-  height: 60px;
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-/* Fondo general */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  overflow-x: hidden;
-}
-
 .navbar nav a {
   color: #fff;
   text-decoration: none;
@@ -50,16 +40,27 @@ body {
   color: #ffeb3b;
 }
 
-body {
-  margin-top: 80px;
+/* ============================
+   Logo
+   ============================ */
+.logo {
+  height: 60px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block;
 }
 
-/* Hero */
+/* ============================
+   Sección principal (hero)
+   ============================ */
 .hero {
   background: linear-gradient(135deg, #0d47a1, #1976d2);
   color: #fff;
   text-align: center;
   padding: 80px 20px;
+  margin-top: 60px;
 }
 .hero h1 {
   font-size: 2.2em;
@@ -70,7 +71,9 @@ body {
   opacity: 0.9;
 }
 
-/* Slider */
+/* ============================
+   Slider de servicios
+   ============================ */
 .slider {
   position: relative;
   overflow: hidden;
@@ -144,7 +147,9 @@ body {
   to { opacity: 1; }
 }
 
-/* Contacto */
+/* ============================
+   Sección de contacto
+   ============================ */
 #contacto {
   display: none;
   background: #e3f2fd;
@@ -189,7 +194,9 @@ body {
   background: #1976d2;
 }
 
-/* Footer */
+/* ============================
+   Pie de página
+   ============================ */
 footer {
   background: #0d47a1;
   color: #fff;
@@ -198,7 +205,9 @@ footer {
   font-size: 0.9em;
 }
 
-/* Responsive */
+/* ============================
+   Responsive
+   ============================ */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 1.8em;
@@ -209,8 +218,4 @@ footer {
   .navbar nav a {
     margin-left: 10px;
   }
-  html, body {
-  border: none;
-}
-
 }
