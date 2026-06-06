@@ -205,18 +205,43 @@ header {
   height: auto;
   object-fit: cover;
 }
-
 .slide-text {
   position: absolute;
   bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.6);
   color: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  text-align: center;
   width: 80%;
   max-width: 500px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.slide-text h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #ffeb3b;
+}
+
+.slide-text p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.btn-info {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.btn-info:hover {
+  background-color: #0d47a1;
+}
+
 }
 
 .btn-info {
