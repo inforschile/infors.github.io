@@ -152,6 +152,21 @@ footer {
     height: 50px;
   }
 }
+/* Restaurar ancho general */
+section, header, footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Fondo general más amplio */
+body {
+  background-color: #ffffff;
+}
+
+/* Ajustar padding del encabezado */
+header {
+  padding: 100px 20px 80px;
+}
 
 
 
