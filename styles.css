@@ -37,7 +37,7 @@ html, body {
   background: linear-gradient(135deg, #0d47a1, #1976d2);
   color: #fff;
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 20px; /* reducido */
   margin-top: 60px;
 }
 .hero h1 { font-size: 1.8em; margin-bottom: 8px; }
@@ -62,4 +62,28 @@ html, body {
 .servicios { background-color: #f5f5f5; padding: 50px 20px; text-align: left; }
 .servicios h2 { text-align: center; color: #0d47a1; font-size: 2em; margin-bottom: 30px; }
 .servicios ul { max-width: 800px; margin: 0 auto; list-style-type: none; padding: 0; }
-.servicios
+.servicios li { margin-bottom: 15px; font-size: 1.1em; line-height: 1.6; }
+.servicios li strong { color: #1976d2; }
+
+/* Contacto */
+#contacto { display: none; background: #e3f2fd; padding: 50px 20px; text-align: center; }
+#contacto h2 { font-size: 2em; margin-bottom: 20px; color: #0d47a1; }
+#contacto a { color: #0d47a1; text-decoration: none; font-weight: bold; }
+#contacto a:hover { color: #1976d2; }
+.contact-form { max-width: 500px; margin: 0 auto; text-align: left; }
+.contact-form label { display: block; margin: 10px 0 5px; font-weight: bold; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 10px; border: 1px solid #bbb; border-radius: 6px; margin-bottom: 15px; font-size: 1em; }
+.contact-form button { background: #0d47a1; color: #fff; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-size: 1em; transition: background 0.3s ease; }
+.contact-form button:hover { background: #1976d2; }
+
+/* Footer */
+footer { background: #0d47a1; color: #fff; text-align: center; padding: 20px; font-size: 0.9em; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero { padding: 30px 15px; }
+  .hero h1 { font-size: 1.5em; }
+  .hero p { font-size: 0.9em; }
+  .slide-text h2 { font-size: 1.4em; }
+  .navbar nav a { margin-left: 10px; }
+}
