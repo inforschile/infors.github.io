@@ -78,5 +78,9 @@ const contacto = document.getElementById("contacto");
 btnContacto.addEventListener("click", () => {
   contacto.style.display = "block";
   contacto.scrollIntoView({ behavior: "smooth" });
-});
+}
+#contacto {
+  display: none;
+}
+                             
                              
