@@ -7,13 +7,20 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Encabezado principal -->
-  <header>
+  <!-- Barra superior -->
+  <header class="navbar">
     <img src="imagenes/logo.png" alt="Infors" class="logo">
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a id="btn-contacto" href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección principal -->
+  <section class="hero">
     <h1>Soluciones tecnológicas confiables</h1>
     <p>Infors Computación SpA</p>
-    <button id="btn-contacto" class="btn-info" style="position:absolute; top:30px; right:30px;">Contacto</button>
-  </header>
+  </section>
 
   <!-- Slider de servicios -->
   <section id="servicios" class="slider">
@@ -44,12 +51,12 @@
       </div>
     </div>
 
-    <!-- Flechas de navegación -->
+    <!-- Flechas -->
     <button class="prev">◀</button>
     <button class="next">▶</button>
   </section>
 
-  <!-- Sección de contacto (oculta al inicio) -->
+  <!-- Sección de contacto -->
   <section id="contacto">
     <h2>Contacto</h2>
     <p>📧 <a href="mailto:contacto@infors.cl">contacto@infors.cl</a></p>
