@@ -209,4 +209,8 @@ footer {
   .navbar nav a {
     margin-left: 10px;
   }
+  html, body {
+  border: none;
+}
+
 }
