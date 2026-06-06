@@ -167,6 +167,19 @@ body {
 header {
   padding: 100px 20px 80px;
 }
+/* Ajuste visual del slider */
+#servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.servicio {
+  flex: 1 1 300px;
+  max-width: 320px;
+}
 
 
 
