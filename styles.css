@@ -6,7 +6,6 @@ body {
   background-color: #ffffff;
   color: #333;
 }
-
 /* Barra superior */
 .navbar {
   background-color: #0d47a1;
@@ -20,6 +19,23 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.logo {
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Fondo general */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .navbar nav a {
