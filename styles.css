@@ -24,8 +24,10 @@ html, body {
 .navbar nav a {
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 10px;         /* más juntos */
   font-weight: bold;
+  font-size: 1.05em;         /* ligeramente más grandes */
+}
 }
 .navbar nav a:hover { color: #ffeb3b; }
 nav a {
