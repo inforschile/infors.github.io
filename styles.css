@@ -35,18 +35,15 @@ nav a {
 header.navbar {
   padding: 10px 0;
 }
-
-/* Logo */
 .logo {
-  height: 80px;
+  height: 90px;              /* más grande */
   width: auto;
   border-radius: 50%;
   background: transparent;
   position: relative;
   z-index: 1001;
+  margin-left: 10px;         /* separa del borde izquierdo */
 }
-
-/* Hero */
 .hero {
   display: flex;
   flex-direction: column;
