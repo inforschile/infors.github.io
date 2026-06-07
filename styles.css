@@ -49,12 +49,12 @@ header.navbar {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 180px;
+  height: 160px;             /* reduce altura para centrar */
   background: linear-gradient(135deg, #0d47a1, #1976d2);
   color: #fff;
   text-align: center;
   margin-top: 60px;
-  padding-top: 80px;
+  padding-top: 40px;         /* sube el texto */
   padding-bottom: 10px;
   margin-bottom: 0;
 }
