@@ -7,55 +7,97 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <!-- Barra superior -->
   <header class="navbar">
     <img src="img/logo.png" alt="Infors" class="logo">
     <nav>
       <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
       <a href="contacto.html" class="activo">Contacto</a>
     </nav>
   </header>
 
-  <!-- Sección principal -->
+  <!-- Encabezado -->
   <section class="hero">
-    <h1>Contáctanos</h1>
-    <p>Estamos disponibles para ayudarte con tus soluciones tecnológicas.</p>
+    <h1>¿Necesitas ayuda tecnológica?</h1>
+    <p>
+      Hosting, soporte técnico, servidores Linux,
+      correo corporativo y soluciones empresariales.
+    </p>
   </section>
 
-  <!-- Sección de contacto -->
+  <!-- Contacto -->
   <section id="contacto" class="contacto">
+
     <h2>Comunícate con nosotros</h2>
-    <p>📧 <a href="mailto:contacto@infors.cl">contacto@infors.cl</a></p>
+
     <p>
-      💬 
+      Estamos disponibles para ayudarte con tus proyectos,
+      soporte técnico y servicios tecnológicos.
+    </p>
+
+    <br>
+
+    <p>
+      📧
+      <a href="mailto:contacto@infors.cl">
+        contacto@infors.cl
+      </a>
+    </p>
+
+    <p>
+      💬
       <a href="https://wa.me/56998800550" target="_blank">
-        <img src="img/whatsapp-icon.png" alt="WhatsApp" style="height:28px;vertical-align:middle;margin-right:8px;">
         Contáctanos por WhatsApp
       </a>
     </p>
 
+    <br>
+
+    <h3>Servicios Destacados</h3>
+
+    <p>
+      ☁️ Hosting Corporativo<br>
+      🌐 Administración DNS<br>
+      🖥️ Soporte Técnico Empresarial<br>
+      📡 Monitoreo Remoto<br>
+      🐧 Servidores Linux<br>
+      💾 Nube Privada Nextcloud
+    </p>
+
+    <!-- Formulario -->
     <form class="contact-form" action="https://formspree.io/f/xwvjvyww" method="POST">
-      <label for="nombre">Nombre:</label>
+
+      <label for="nombre">Nombre o Empresa:</label>
       <input type="text" id="nombre" name="nombre" required>
 
-      <label for="email">Correo:</label>
+      <label for="email">Correo Electrónico:</label>
       <input type="email" id="email" name="email" required>
 
-      <label for="mensaje">Mensaje:</label>
+      <label for="telefono">Teléfono (Opcional):</label>
+      <input type="tel" id="telefono" name="telefono">
+
+      <label for="mensaje">¿Cómo podemos ayudarte?</label>
       <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-      <input type="hidden" name="_next" value="https://infors.github.io/gracias.html">
-      <input type="hidden" name="_subject" value="Nuevo mensaje desde Infors.cl">
-      
+      <input type="hidden" name="_subject" value="Nueva consulta desde Infors.cl">
       <input type="hidden" name="_next" value="https://infors.cl/gracias.html">
 
-      <button type="submit">Enviar</button>
+      <button type="submit">Solicitar Contacto</button>
+
+      <p style="text-align:center; margin-top:15px; color:#666; font-size:0.9em;">
+        Respondemos normalmente dentro de las primeras 24 horas hábiles.
+      </p>
+
     </form>
+
   </section>
 
   <!-- Pie de página -->
   <footer>
     © 2026 Infors Computación SpA — Todos los derechos reservados.
   </footer>
+
 </body>
 </html>
