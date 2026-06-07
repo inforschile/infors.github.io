@@ -61,8 +61,56 @@ html, body {
 .servicios ul { max-width: 800px; margin: 0 auto; list-style-type: none; padding: 0; }
 .servicios li { margin-bottom: 15px; font-size: 1.1em; line-height: 1.6; }
 .servicios li strong { color: #1976d2; }
-
 /* Contacto */
-#contacto { display: none; background: #e3f2fd; padding: 50px 20px; text-align: center; }
-#contacto h2 { font-size: 2em; margin-bottom: 20px; color: #0d47a1; }
-#contacto a { color: #0d47a
+#contacto {
+  display: none;
+  background: #e3f2fd;
+  padding: 50px 20px;
+  text-align: center;
+}
+#contacto h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #0d47a1;
+}
+#contacto a {
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: bold;
+}
+#contacto a:hover {
+  color: #1976d2;
+}
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+.contact-form button {
+  background: #0d47a1;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+.contact-form button:hover {
+  background: #1976d2;
+}
+
