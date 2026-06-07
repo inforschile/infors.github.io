@@ -24,7 +24,7 @@ html, body {
 }
 .navbar nav {
   display: flex;
-  gap: 10px; /* botones más juntos */
+  gap: 8px; /* botones más juntos */
 }
 .navbar nav a {
   color: #fff;
@@ -36,7 +36,7 @@ html, body {
 
 /* Logo */
 .logo {
-  height: 120px; /* más grande */
+  height: 130px; /* más grande */
   width: auto;
   border-radius: 50%;
   background: transparent;
@@ -51,7 +51,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 180px; /* altura suficiente para centrar texto */
+  height: 200px; /* suficiente para centrar texto */
   background: linear-gradient(135deg, #0d47a1, #1976d2);
   color: #fff;
   text-align: center;
@@ -220,7 +220,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 15px;
-  margin-top: 40px;
+  margin-top: 0; /* elimina espacio extra */
   font-size: 0.9em;
   margin-bottom: 20px;
 }
@@ -247,6 +247,6 @@ footer {
   .hero h1 { font-size: 1.4em; }
   .hero p { font-size: 0.9em; }
   .logo { height: 100px; }
-  .navbar nav { gap: 6px; justify-content: flex-end; }
+  .navbar nav { gap: 4px; justify-content: flex-end; }
   .navbar nav a { font-size: 1.05em; }
 }
