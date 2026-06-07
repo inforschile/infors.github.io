@@ -331,4 +331,9 @@ footer {
   .slide-text p {
     font-size: .95rem;
   }
+/* Vistas ocultas */
+
+#lista-servicios,
+#contacto {
+  display: none;
 }
