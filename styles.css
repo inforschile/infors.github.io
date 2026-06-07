@@ -244,3 +244,7 @@ footer {
   .hero p { font-size: 0.9em; }
   .logo { height: 45px; }
 }
+.hero + .slider {
+  margin-top: 0;
+  padding-top: 0;
+}
