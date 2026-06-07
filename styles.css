@@ -164,3 +164,9 @@ footer {
   position: relative;
   z-index: 1001;
 }
+.slider {
+  margin-top: 20px;
+}
+.hero {
+  padding-top: 80px;
+}
