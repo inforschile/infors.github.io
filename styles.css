@@ -173,3 +173,11 @@ footer {
 footer {
   margin-bottom: 20px;
 }
+.logo {
+  height: 80px;
+  width: auto;
+  border-radius: 50%;
+  background: transparent;
+  position: relative;
+  z-index: 1001;
+}
