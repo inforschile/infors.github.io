@@ -1,2 +1,57 @@
-<a href="https://wa.me/56998800550" target="_blank">Contáctanos por WhatsApp</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Infors Computación SpA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <img src="img/logo.png" alt="Infors" class="logo">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Contáctanos</h1>
+    <p>Estamos disponibles para ayudarte con tus soluciones tecnológicas.</p>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Comunícate con nosotros</h2>
+    <p>📧 <a href="mailto:contacto@infors.cl">contacto@infors.cl</a></p>
+    <p>
+      💬 
+      <a href="https://wa.me/56998800550" target="_blank">
+        <img src="img/whatsapp-icon.png" alt="WhatsApp" style="height:28px;vertical-align:middle;margin-right:8px;">
+        Contáctanos por WhatsApp
+      </a>
+    </p>
+
+    <form class="contact-form" action="https://formspree.io/f/xwvjvyww" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <input type="hidden" name="_next" value="https://infors.github.io/gracias.html">
+      <input type="hidden" name="_subject" value="Nuevo mensaje desde Infors.cl">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2026 Infors Computación SpA — Todos los derechos reservados.
+  </footer>
+</body>
+</html>
+
 
