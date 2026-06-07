@@ -213,8 +213,8 @@ body {
 
 /* Contacto */
 #contacto {
-  display: none;
-
+  display: block;
+}
   background: #e3f2fd;
 
   padding: 50px 20px;
