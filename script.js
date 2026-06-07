@@ -38,11 +38,17 @@ btnContacto.addEventListener("click", (e) => {
 });
 
 // --- Botón Servicios ---
-const btnServicios = document.querySelector('a[href="#lista-servicios"]');
+const botonesServicios = document.querySelectorAll('a[href="#lista-servicios"]');
 const listaServicios = document.getElementById("lista-servicios");
 
-btnServicios.addEventListener("click", (e) => {
-  e.preventDefault();
-  listaServicios.style.display = "block";
-  listaServicios.scrollIntoView({ behavior: "smooth" });
+botonesServicios.forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    listaServicios.style.display = "block";
+
+    listaServicios.scrollIntoView({
+      behavior: "smooth"
+    });
+  });
 });
