@@ -14,28 +14,29 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 20px;
+  padding: 12px 20px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 .navbar nav {
   display: flex;
-  gap: 6px; /* botones más juntos */
+  gap: 10px; /* botones más juntos */
 }
 .navbar nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.15em;
 }
 .navbar nav a:hover { color: #ffeb3b; }
 
 /* Logo */
 .logo {
-  height: 130px; /* más grande */
+  height: 120px; /* más grande */
   width: auto;
   border-radius: 50%;
   background: transparent;
@@ -54,7 +55,7 @@ html, body {
   background: linear-gradient(135deg, #0d47a1, #1976d2);
   color: #fff;
   text-align: center;
-  margin-top: 130px; /* compensa el logo más grande */
+  margin-top: 140px; /* compensa la barra y el logo */
   padding: 0;
 }
 .hero h1 {
@@ -245,7 +246,7 @@ footer {
 @media (max-width: 600px) {
   .hero h1 { font-size: 1.4em; }
   .hero p { font-size: 0.9em; }
-  .logo { height: 100px; } /* tamaño adaptado en móvil */
-  .navbar nav { gap: 4px; justify-content: flex-end; } /* botones más juntos y centrados */
+  .logo { height: 100px; }
+  .navbar nav { gap: 6px; justify-content: flex-end; }
   .navbar nav a { font-size: 1.05em; }
 }
