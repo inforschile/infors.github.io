@@ -14,7 +14,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 8px 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -23,19 +23,19 @@ html, body {
 }
 .navbar nav {
   display: flex;
-  gap: 12px;                 /* controla la separación entre enlaces */
+  gap: 6px; /* botones más juntos */
 }
 .navbar nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.15em;          /* más grandes */
+  font-size: 1.1em;
 }
 .navbar nav a:hover { color: #ffeb3b; }
 
 /* Logo */
 .logo {
-  height: 120px;              /* aún más grande */
+  height: 130px; /* más grande */
   width: auto;
   border-radius: 50%;
   background: transparent;
@@ -50,12 +50,12 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 140px;              /* ajusta altura para centrar texto */
+  height: 180px; /* altura suficiente para centrar texto */
   background: linear-gradient(135deg, #0d47a1, #1976d2);
   color: #fff;
   text-align: center;
-  margin-top: 60px;
-  padding: 0;                 /* elimina padding extra */
+  margin-top: 130px; /* compensa el logo más grande */
+  padding: 0;
 }
 .hero h1 {
   font-size: 1.8em;
@@ -245,7 +245,7 @@ footer {
 @media (max-width: 600px) {
   .hero h1 { font-size: 1.4em; }
   .hero p { font-size: 0.9em; }
-  .logo { height: 90px; }     /* tamaño adaptado en móvil */
-  .navbar nav { gap: 8px; }   /* botones más juntos en móvil */
+  .logo { height: 100px; } /* tamaño adaptado en móvil */
+  .navbar nav { gap: 4px; justify-content: flex-end; } /* botones más juntos y centrados */
   .navbar nav a { font-size: 1.05em; }
 }
