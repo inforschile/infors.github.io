@@ -337,3 +337,41 @@ footer {
 #contacto {
   display: none;
 }
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+  transition: transform .2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+}
+
+.service-card h3 {
+  color: #0d47a1;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.service-card p {
+  color: #444;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
