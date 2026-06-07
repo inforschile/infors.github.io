@@ -1,16 +1,48 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const btnServicios = document.getElementById("btn-servicios");
-  const listaServicios = document.getElementById("lista-servicios");
-  const btnContacto = document.getElementById("btn-contacto");
+// --- Slider ---
+const slides = document.querySelectorAll(".slide");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+let currentSlide = 0;
 
-  btnServicios.addEventListener("click", (e) => {
-    e.preventDefault();
-    listaServicios.style.display = "block";
-    listaServicios.scrollIntoView({ behavior: "smooth" });
+function mostrarSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === index);
   });
+}
 
-  btnContacto.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.location.href = "contacto.html";
-  });
+mostrarSlide(currentSlide);
+
+prevBtn.addEventListener("click", () => {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  mostrarSlide(currentSlide);
+});
+
+nextBtn.addEventListener("click", () => {
+  currentSlide = (currentSlide + 1) % slides.length;
+  mostrarSlide(currentSlide);
+});
+
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % slides.length;
+  mostrarSlide(currentSlide);
+}, 6000);
+
+// --- Botón Contacto ---
+const btnContacto = document.getElementById("btn-contacto");
+const contacto = document.getElementById("contacto");
+
+btnContacto.addEventListener("click", (e) => {
+  e.preventDefault();
+  contacto.style.display = "block";
+  contacto.scrollIntoView({ behavior: "smooth" });
+});
+
+// --- Botón Servicios ---
+const btnServicios = document.querySelector('a[href="#lista-servicios"]');
+const listaServicios = document.getElementById("lista-servicios");
+
+btnServicios.addEventListener("click", (e) => {
+  e.preventDefault();
+  listaServicios.style.display = "block";
+  listaServicios.scrollIntoView({ behavior: "smooth" });
 });
