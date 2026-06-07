@@ -214,3 +214,7 @@ nav a {
 header.navbar {
   padding: 10px 0;
 }
+.slide-text h2 {
+  font-size: 1.4em;
+  word-wrap: break-word;
+}
