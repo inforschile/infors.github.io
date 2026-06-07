@@ -24,13 +24,13 @@ html, body {
 .navbar nav a {
   color: #fff;
   text-decoration: none;
-  margin-left: 12px;          /* más juntos */
+  margin-left: 8px;           /* más juntos */
   font-weight: bold;
-  font-size: 1.1em;           /* ligeramente más grandes */
+  font-size: 1.15em;          /* ligeramente más grandes */
 }
 .navbar nav a:hover { color: #ffeb3b; }
 nav a {
-  padding: 0 10px;
+  padding: 0 8px;
   display: inline-block;
 }
 header.navbar {
@@ -39,7 +39,7 @@ header.navbar {
 
 /* Logo */
 .logo {
-  height: 100px;              /* más grande */
+  height: 110px;              /* más grande */
   width: auto;
   border-radius: 50%;
   background: transparent;
@@ -54,12 +54,12 @@ header.navbar {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 160px;              /* reduce altura para centrar texto */
+  height: 150px;              /* ajusta altura para centrar texto */
   background: linear-gradient(135deg, #0d47a1, #1976d2);
   color: #fff;
   text-align: center;
   margin-top: 60px;
-  padding-top: 40px;          /* sube el texto */
+  padding-top: 30px;          /* sube el texto */
   padding-bottom: 10px;
   margin-bottom: 0;
 }
@@ -251,6 +251,6 @@ footer {
 @media (max-width: 600px) {
   .hero h1 { font-size: 1.4em; }
   .hero p { font-size: 0.9em; }
-  .logo { height: 70px; }     /* tamaño adaptado en móvil */
-  .navbar nav a { font-size: 1em; margin-left: 8px; }
+  .logo { height: 80px; }     /* tamaño adaptado en móvil */
+  .navbar nav a { font-size: 1.05em; margin-left: 6px; }
 }
