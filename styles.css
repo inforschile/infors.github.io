@@ -331,9 +331,6 @@ footer {
 }
 /* Vistas ocultas */
 
-#lista-servicios
-  display: none;
-}
 .service-grid {
   display: grid;
   grid-template-columns: 1fr;
