@@ -56,8 +56,3 @@ setInterval(() => {
   mostrarSlide(currentSlide);
 
 }, 6000);
-
-
-// =====================
-// Secciones
-// =====================
