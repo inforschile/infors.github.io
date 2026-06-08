@@ -333,8 +333,7 @@ footer {
 }
 /* Vistas ocultas */
 
-#lista-servicios,
-#contacto {
+#lista-servicios
   display: none;
 }
 .service-grid {
