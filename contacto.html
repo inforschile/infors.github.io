@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Infors Computación SpA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      background: #e3f2fd;
+      padding: 40px 20px;
+    }
+
+    .contact-form {
+      flex: 1 1 400px;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 10px;
+    }
+
+    .contact-form h2 {
+      color: #0d47a1;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #0d47a1;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 18px;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+
+    .contact-form button {
+      background: #1976d2;
+      color: #fff;
+      border: none;
+      padding: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #0d47a1;
+    }
+
+    .contact-info {
+      flex: 1 1 300px;
+      background: #0d47a1;
+      color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 20px;
+      font-size: 1.5em;
+    }
+
+    .contact-icons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-icons img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Barra superior -->
+  <header class="navbar">
+    <img src="img/logo.png" alt="Infors" class="logo">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Contáctanos</h1>
+    <p>Estamos aquí para ayudarte</p>
+  </section>
+
+  <!-- Bloque de contacto -->
+  <section class="contact-container">
+    <!-- Formulario -->
+    <div class="contact-form">
+      <h2>Envíanos un mensaje</h2>
+      <form action="https://formspree.io/f/xwvjvyww" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Imagen e íconos -->
+    <div class="contact-info">
+      <h3>Medios de contacto</h3>
+      <div class="contact-icons">
+        <img src="img/whatsapp-icon.png" alt="WhatsApp">
+        <img src="img/email-icon.png" alt="Correo">
+        <img src="img/phone-icon.png" alt="Teléfono">
+        <img src="img/instagram-icon.png" alt="Instagram (próximamente)">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Infors Computación SpA — Todos los derechos reservados.
+  </footer>
+</body>
+</html>
 
