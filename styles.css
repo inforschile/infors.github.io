@@ -125,7 +125,12 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: 5;
+  text-align: center;
+  color: #fff;
+  width: 90%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .slide-content h2 {
