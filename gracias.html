@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensaje enviado - Infors Computación SpA</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Solo estilos específicos para esta página */
+    .gracias-hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 70vh;
+      background: linear-gradient(135deg, #0d47a1, #1976d2);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 95px;
+    }
+    .gracias-hero h1 {
+      color: #ffeb3b;
+      font-size: 2.4em;
+      margin-bottom: 20px;
+    }
+    .gracias-hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+    .gracias-hero .btn-info {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #ffeb3b;
+      color: #0d47a1;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    .gracias-hero .btn-info:hover {
+      background-color: #fbc02d;
+    }
+    @media (max-width: 600px) {
+      .gracias-hero { margin-top: 85px; }
+      .gracias-hero h1 { font-size: 2em; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra superior - para que no quede atrapado -->
+  <header class="navbar">
+    <img src="img/logo.png" alt="Infors" class="logo">
+    <nav> 
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Main es clave para que no vuelva la franja blanca -->
+  <main>
+    <section class="gracias-hero">
+      <h1>✅ ¡Gracias por tu mensaje!</h1>
+      <p>Tu consulta ha sido enviada correctamente. Te responderemos a la brevedad.</p>
+      <a href="index.html" class="btn-info">Volver al inicio</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Infors Computación SpA — Todos los derechos reservados.
+  </footer>
+</body>
+</html>
