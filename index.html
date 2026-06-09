@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infors Computación SpA - Soluciones tecnológicas confiables</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infors Computación SpA</title>
+  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header class="navbar">
-        <img src="img/logo.png" alt="Infors Logo" class="logo">
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
+  <header class="navbar">
+    <img src="img/logo.png" alt="Infors" class="logo">
+    <nav> 
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero">
-            <h1>Soluciones tecnológicas confiables</h1>
-            <p>Infors Computación SpA</p>
-        </section>
+  <main>
+    <section class="hero">
+      <h1>Soluciones tecnológicas confiables</h1>
+      <p>Infors Computación SpA</p>
+    </section>
 
-        <section class="slider">
-            <div class="slide active">
-                <img src="img/hosting.jpg" alt="Hosting y Servicios Web">
-                <div class="slide-text">
-                    <h2>Hosting y Servicios Web</h2>
-                    <p>Hosting profesional, correos corporativos, dominios y administración DNS.</p>
-                    <a href="servicios.html" class="btn-info">Ver más</a>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="img/servidores.jpg" alt="Servidores Dedicados">
-                <div class="slide-text">
-                    <h2>Servidores Dedicados</h2>
-                    <p>Infraestructura robusta y escalable para tu empresa.</p>
-                    <a href="servicios.html" class="btn-info">Ver más</a>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="img/soporte-tecnico.jpg" alt="Soporte Técnico">
-                <div class="slide-text">
-                    <h2>Soporte Técnico 24/7</h2>
-                    <p>Asistencia remota y presencial cuando la necesites.</p>
-                    <a href="contacto.html" class="btn-info">Contáctanos</a>
-                </div>
-            </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-        </section>
-    </main>
+    <section class="carousel">
+      <div class="slide active">
+        <img src="img/servidor1.jpg" alt="Servidores Dedicados">
+        <div class="slide-content">
+          <h2>Servidores Dedicados</h2>
+          <p>Infraestructura robusta y escalable para tu empresa.</p>
+          <a href="servicios.html" class="btn-info">Ver más</a>
+        </div>
+      </div>
 
-    <footer>
-        <p>© 2026 Infors Computación SpA — Todos los derechos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
+      <div class="slide">
+        <img src="img/servidor2.jpg" alt="Soporte Técnico">
+        <div class="slide-content">
+          <h2>Soporte Técnico</h2>
+          <p>Atención remota y presencial cuando la necesites.</p>
+          <a href="servicios.html" class="btn-info">Ver más</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="img/servidor3.jpg" alt="Desarrollo Web">
+        <div class="slide-content">
+          <h2>Desarrollo Web</h2>
+          <p>Sitios modernos, rápidos y optimizados para tu negocio.</p>
+          <a href="servicios.html" class="btn-info">Ver más</a>
+        </div>
+      </div>
+
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Infors Computación SpA — Todos los derechos reservados.
+  </footer>
+
+  <script src="script.js?v=7"></script>
 </body>
 </html>
