@@ -2,101 +2,29 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Infors Computación SpA</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  <style>
-    body { font-family: 'Roboto', Arial, sans-serif; margin:0; padding:0; background:#f5f5f5; color:#333; }
-    header { background:#0d47a1; color:#fff; padding:40px 20px; text-align:center; }
-    header h1 { margin:0; font-size:32px; }
-    header p { font-size:18px; margin-top:10px; }
-    nav { background:#2e7d32; padding:12px; text-align:center; }
-    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
-    section { padding:50px 20px; text-align:center; }
-    section h2 { color:#0d47a1; margin-bottom:20px; }
-    .swiper { width:100%; max-width:900px; margin:auto; }
-    .swiper-slide { background:#fff; padding:30px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
-    .swiper-slide img { max-width:100%; border-radius:6px; margin-bottom:15px; }
-    .swiper-slide h3 { color:#2e7d32; margin-top:0; }
-    .confianza { background:#fff; padding:30px; border-radius:8px; max-width:700px; margin:auto; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
-    .contacto { font-size:16px; margin-top:20px; }
-    .contacto a { color:#2e7d32; text-decoration:none; font-weight:bold; }
-    .contacto a:hover { text-decoration:underline; }
-    footer { background:#333; color:#fff; text-align:center; padding:20px; font-size:14px; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
+    <img src="img/logo.png" alt="Logo Infors" height="80">
     <h1>Infors Computación SpA</h1>
     <p>Soluciones tecnológicas confiables para tu empresa</p>
   </header>
 
   <nav>
-    <a href="#servicios">Servicios</a>
-    <a href="#confianza">Confianza</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#contacto">Contacto</a>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contacto.html">Contacto</a>
   </nav>
 
-  <section id="servicios">
-    <h2>Nuestros Servicios</h2>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="imagenes/soporte-tecnico.jpg" alt="Soporte Técnico">
-          <h3>Soporte Técnico</h3>
-          <p>Diagnóstico y reparación de notebooks y PCs.</p>
-        </div>
-        <div class="swiper-slide">
-          <img src="imagenes/datos.jpg" alt="Recuperación de Datos">
-          <h3>Recuperación de Datos</h3>
-          <p>Soluciones seguras para discos y SSD.</p>
-        </div>
-        <div class="swiper-slide">
-          <img src="imagenes/software.jpg" alt="Instalación de Software">
-          <h3>Instalación de Software</h3>
-          <p>Configuración de sistemas y aplicaciones.</p>
-        </div>
-        <div class="swiper-slide">
-          <img src="imagenes/reacondicionamiento.jpg" alt="Reacondicionamiento">
-          <h3>Reacondicionamiento</h3>
-          <p>Reciclaje y reutilización de equipos computacionales.</p>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-
-  <section id="confianza">
-    <h2>Confianza y Compromiso</h2>
-    <div class="confianza">
-      <p>En Infors Computación SpA creemos en diagnósticos claros, soluciones confiables y atención personalizada. Nuestro compromiso es acompañar a cada cliente con transparencia y eficiencia.</p>
-    </div>
-  </section>
-
-  <section id="nosotros">
-    <h2>Quiénes Somos</h2>
-    <p>Somos un equipo con experiencia en soporte técnico, reciclaje y desarrollo web. Nuestra misión es brindar soluciones tecnológicas integrales que generen confianza y valor.</p>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <div class="contacto">
-      📧 Escríbenos: <a href="mailto:contacto@infors.cl">contacto@infors.cl</a><br>
-      📱 WhatsApp: +56 9 1234 5678
-    </div>
-  </section>
+  <main>
+    <h2>Bienvenido</h2>
+    <p>En Infors ofrecemos soporte técnico, recuperación de datos y reacondicionamiento de equipos.</p>
+  </main>
 
   <footer>
     © 2026 Infors Computación SpA - Todos los derechos reservados
   </footer>
-
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper', {
-      loop: true,
-      pagination: { el: '.swiper-pagination', clickable: true },
-    });
-  </script>
 </body>
 </html>
