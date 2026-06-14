@@ -17,6 +17,7 @@ header {
 header img {
   display: block;
   margin: 0 auto 10px auto;
+  height: 80px;
 }
 header h1 {
   margin: 0;
@@ -39,7 +40,9 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
-nav a:hover {
+nav a:hover,
+nav a:visited {
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -86,4 +89,11 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 { font-size: 22px; }
+  nav a { display: inline-block; margin: 8px; }
+  main ul li { max-width: 90%; }
 }
