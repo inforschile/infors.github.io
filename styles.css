@@ -202,3 +202,31 @@ footer {
   .navbar ul li { margin: 10px 0; }
   .swiper { height: 250px; }
 }
+/* Sección Nosotros */
+.nosotros {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nosotros-texto h2 {
+  color: #004080;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.nosotros-texto p {
+  margin-bottom: 15px;
+}
+
+.nosotros-texto ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nosotros-texto ul li {
+  margin-bottom: 10px;
+}
