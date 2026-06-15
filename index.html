@@ -2,29 +2,31 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Infors Computación SpA</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <img src="img/logo.png" alt="Logo Infors" height="80">
-    <h1>Infors Computación SpA</h1>
-    <p>Soluciones tecnológicas confiables para tu empresa</p>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Infors</a>
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
-
-  <main>
-    <h2>Bienvenido</h2>
-    <p>Ofrecemos mantención y actualización de equipos, soporte técnico remoto, instalación de software, hosting para PYMEs, redes y venta de notebooks reacondicionados.</p>
-  </main>
+  <section class="hero">
+    <h1>Bienvenido a Infors</h1>
+    <p>Soluciones tecnológicas confiables para tu empresa.</p>
+    <a href="servicios.html" class="btn">Ver Servicios</a>
+  </section>
 
   <footer>
-    © 2026 Infors Computación SpA - Todos los derechos reservados
+    <p>&copy; 2026 Infors Computación SpA - Todos los derechos reservados</p>
   </footer>
 </body>
 </html>
