@@ -6,6 +6,8 @@
   <title>Infors Computación SpA</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
   <header>
@@ -19,14 +21,71 @@
     </nav>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
     <h1>Bienvenido a Infors</h1>
     <p>Soluciones tecnológicas confiables para tu empresa.</p>
-    <a href="servicios.html" class="btn">Ver Servicios</a>
+    <a href="#servicios" class="btn">Ver Servicios</a>
   </section>
 
+  <!-- Sección Servicios -->
+  <section class="servicios" id="servicios">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+
+        <!-- Servicio 1 -->
+        <div class="swiper-slide">
+          <img src="img/instalacion.jpg" alt="Instalación de Sistemas" class="servicio-img">
+          <h2>Instalación de Sistemas</h2>
+          <p>Instalación y configuración de software confiable.</p>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="swiper-slide">
+          <img src="img/notebooks.jpg" alt="Notebooks Reacondicionados" class="servicio-img">
+          <h2>Notebooks Reacondicionados</h2>
+          <p>Venta de notebooks reacondicionados garantizados.</p>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="swiper-slide">
+          <img src="img/mantencion.jpg" alt="Mantención de Equipos" class="servicio-img">
+          <h2>Mantención de Equipos</h2>
+          <p>Mantención y mejoras para tu computador.</p>
+        </div>
+
+      </div>
+      <!-- Botones de navegación -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Paginación -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2026 Infors Computación SpA - Todos los derechos reservados</p>
   </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>
