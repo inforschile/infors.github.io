@@ -170,7 +170,7 @@ body {
 
 .swiper {
   width: 100%;
-  height: 300px;
+  height: 340px; /* más alto para títulos largos */
 }
 
 /* Texto sobre la imagen del carrusel */
@@ -187,26 +187,29 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 2px 6px rgba(0,0,0,0.6);
-  width: 80%;
+  width: 85%; /* más ancho para evitar cortes */
 }
 
 /* Título centrado */
 .swiper-slide h2 {
-  top: 45%; /* ligeramente más arriba */
-  font-size: 1.6em;
+  top: 42%; /* más arriba */
+  font-size: 1.4em;
   font-weight: bold;
+  line-height: 1.3; /* separación entre líneas */
+  word-wrap: break-word;
 }
 
-/* Descripción una línea más abajo */
+/* Descripción más abajo */
 .swiper-slide p {
-  top: 58%; /* separa la descripción del título */
-  font-size: 1em;
+  top: 62%;
+  font-size: 0.95em;
+  line-height: 1.4;
 }
 
 /* Imagen con oscurecimiento para resaltar texto */
 .servicio-img {
   width: 100%;
-  height: 300px;
+  height: 340px;
   object-fit: cover;
   border-radius: 8px;
   filter: brightness(70%);
@@ -232,7 +235,10 @@ footer {
     gap: 15px;
   }
   .navbar ul li { margin: 0; }
-  .swiper { height: 250px; }
+  .swiper { height: 280px; }
+  .swiper-slide h2 { font-size: 1.2em; }
+  .swiper-slide p { font-size: 0.85em; top: 65%; }
+  .servicio-img { height: 280px; }
 }
 
 /* Sección Nosotros */
