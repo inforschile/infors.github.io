@@ -2,57 +2,76 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Servicios - Infors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - Infors Computación SpA</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
   <header>
-    <img src="img/logo.png" alt="Logo Infors" height="80">
-    <h1>Servicios</h1>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Infors</a>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="active">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
+  <section class="hero">
+    <h1>Nuestros Servicios</h1>
+    <p>Soluciones tecnológicas adaptadas a tus necesidades.</p>
+  </section>
 
-  <main>
-    <h2>Nuestros Servicios</h2>
-    <div class="servicio">
-      <img src="img/mantencion.jpg" alt="Mantención y Up-grade">
-      <h3>Mantención y Up‑grade</h3>
-      <p>Actualización de hardware y optimización de rendimiento en notebooks y PCs.</p>
+  <!-- Carrusel de servicios -->
+  <section class="servicios">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <h2>Soporte Técnico</h2>
+          <p>Diagnóstico y reparación de equipos computacionales.</p>
+        </div>
+        <div class="swiper-slide">
+          <h2>Hosting y Dominios</h2>
+          <p>Planes confiables para tu negocio en línea.</p>
+        </div>
+        <div class="swiper-slide">
+          <h2>Desarrollo Web</h2>
+          <p>Diseño de páginas modernas y responsivas.</p>
+        </div>
+        <div class="swiper-slide">
+          <h2>Reciclaje de Hardware</h2>
+          <p>Reacondicionamiento y reutilización de equipos.</p>
+        </div>
+      </div>
+      <!-- Botones de navegación -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Paginación -->
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="servicio">
-      <img src="img/soporte.jpg" alt="Soporte técnico remoto">
-      <h3>Soporte técnico remoto</h3>
-      <p>Asistencia a distancia para incidencias y diagnósticos confiables.</p>
-    </div>
-    <div class="servicio">
-      <img src="img/software.jpg" alt="Instalación de software">
-      <h3>Instalación de software</h3>
-      <p>Sistemas operativos, suites de oficina y configuración personalizada.</p>
-    </div>
-    <div class="servicio">
-      <img src="img/hosting.jpg" alt="Hosting para PYMEs">
-      <h3>Hosting para PYMEs</h3>
-      <p>Correos corporativos y sitios web con SSL y soporte.</p>
-    </div>
-    <div class="servicio">
-      <img src="img/redes.jpg" alt="Redes y conectividad">
-      <h3>Redes y conectividad</h3>
-      <p>Instalación y configuración de routers, switches y seguridad de red.</p>
-    </div>
-    <div class="servicio">
-      <img src="img/notebooks.jpg" alt="Venta de notebooks reacondicionados">
-      <h3>Venta de notebooks reacondicionados</h3>
-      <p>Equipos revisados, garantizados y listos para trabajar.</p>
-    </div>
-  </main>
+  </section>
 
   <footer>
-    © 2026 Infors Computación SpA
+    <p>&copy; 2026 Infors Computación SpA - Todos los derechos reservados</p>
   </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
