@@ -31,16 +31,25 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
+  flex-direction: row; /* disposición horizontal */
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
 }
 
 .navbar ul li {
-  margin-left: 20px;
+  margin: 0;
 }
 
 .navbar ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #cce0ff;
 }
 
 .navbar ul li a.active {
@@ -158,30 +167,49 @@ body {
   margin: 40px auto;
   padding: 20px;
 }
+
 .swiper {
   width: 100%;
   height: 300px;
 }
 
+/* Texto sobre la imagen del carrusel */
 .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
-.swiper-slide h2 {
-  color: #004080;
-  margin-bottom: 10px;
-}
-
+.swiper-slide h2,
 .swiper-slide p {
-  font-size: 1em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
   text-align: center;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  width: 80%;
+}
+
+/* Título centrado */
+.swiper-slide h2 {
+  top: 45%; /* ligeramente más arriba */
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* Descripción una línea más abajo */
+.swiper-slide p {
+  top: 58%; /* separa la descripción del título */
+  font-size: 1em;
+}
+
+/* Imagen con oscurecimiento para resaltar texto */
+.servicio-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: brightness(70%);
 }
 
 /* Footer */
@@ -203,10 +231,10 @@ footer {
     align-items: center;
     gap: 15px;
   }
-
   .navbar ul li { margin: 0; }
   .swiper { height: 250px; }
 }
+
 /* Sección Nosotros */
 .nosotros {
   max-width: 900px;
@@ -234,46 +262,4 @@ footer {
 
 .nosotros-texto ul li {
   margin-bottom: 10px;
-}
-.servicio-img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-/* Texto sobre la imagen del carrusel */
-.swiper-slide {
-  position: relative;
-  overflow: hidden;
-}
-
-.swiper-slide h2,
-.swiper-slide p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
-  width: 80%;
-}
-
-.swiper-slide h2 {
-  font-size: 1.6em;
-  font-weight: bold;
-}
-
-.swiper-slide p {
-  font-size: 1em;
-  margin-top: 10px;
-}
-
-.servicio-img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-  filter: brightness(70%); /* oscurece la imagen para resaltar el texto */
 }
